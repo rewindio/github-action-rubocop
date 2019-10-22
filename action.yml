@@ -1,0 +1,5 @@
+name: 'Selective Rubocop'
+description: 'Run Rubocop only on the current changes'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
