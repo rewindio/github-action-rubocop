@@ -6,7 +6,8 @@ LABEL "com.github.actions.icon"="flag"
 LABEL "com.github.actions.color"="red"
 
 RUN apk add --no-cache \
-  build-base=~0.5
+  build-base=~0.5 \
+  git
 
 RUN addgroup -S rubocop && \
   adduser -S -g rubocop rubocop
