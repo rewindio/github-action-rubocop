@@ -1,5 +1,5 @@
-#!/bin/sh
-
+#!/bin/bash
+set -x
 set -e
 
 echo "Running Rubocop on these files...."
