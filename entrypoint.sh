@@ -1,6 +1,5 @@
 #!/bin/bash
 set -x
-set -e
 
 echo "Running Rubocop on these files...."
 git diff --diff-filter=d --name-only origin/master | xargs ls -1 2>/dev/null | grep '\.rb$'
