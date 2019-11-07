@@ -16,6 +16,6 @@ RUN gem install rubocop --no-document
 
 COPY entrypoint.sh /entrypoint.sh
 
-ADD .github .github
+COPY rubocop-problem-matcher.json /rubocop-problem-matcher.json
 
 ENTRYPOINT ["/entrypoint.sh"]

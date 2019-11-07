@@ -2,8 +2,7 @@
 
 echo "Running Rubocop..."
 
-matcher=`pwd`/../.github/rubocop-problem-matcher.json
-echo "::add-matcher::$matcher"   
+echo "::add-matcher::/rubocop-problem-matcher.json"   
 
 file_list=$(git diff --diff-filter=d --name-only origin/master |grep '\.rb$')
 
