@@ -6,7 +6,7 @@ matcher_path=`pwd`/rubocop-problem-matcher.json
 
 cp /rubocop-problem-matcher.json "$matcher_path"
 
-echo "::add-matcher::$matcher_path"   
+echo "::add-matcher::rubocop-problem-matcher.json"   
 
 file_list=$(git diff --diff-filter=d --name-only origin/master |grep '\.rb$')
 
