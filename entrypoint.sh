@@ -11,7 +11,7 @@ cp /rubocop-problem-matcher.json "$matcher_path"
 # and is not the same path outside the container on the VM.  Instead, just use current dir
 echo "::add-matcher::rubocop-problem-matcher.json"   
 
-file_list=$(git diff --diff-filter=d --name-only origin/master |grep '\.rb$')
+file_list=$(git diff --diff-filter=d --name-only origin/main |grep '\.rb$')
 
 if [ -z "$file_list" ]; then
         echo "No Ruby file changes to scan"
